@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'saldo',
     loadChildren: () => import('./saldo/saldo.module').then( m => m.SaldoPageModule)
   },
@@ -18,6 +19,19 @@ const routes: Routes = [
     path: 'extrato',
     loadChildren: () => import('./extrato/extrato.module').then( m => m.ExtratoPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+];
 
 ];
 

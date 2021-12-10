@@ -1,3 +1,22 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="main-menu" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Saldo</ion-item>
+        <ion-item>Extratos</ion-item>
+        <ion-item>Pagamentos</ion-item>
+        <ion-item>Transfência/pix</ion-item>
+        <ion-item>Comprovante</ion-item>
+        <ion-item>Saque</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+  
 </ion-app>
