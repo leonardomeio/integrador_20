@@ -10,7 +10,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'saldo',
+    loadChildren: () => import('./saldo/saldo.module').then( m => m.SaldoPageModule)
   },
+  {
+    path: 'extrato',
+    loadChildren: () => import('./extrato/extrato.module').then( m => m.ExtratoPageModule)
+  },
+
 ];
 
 @NgModule({
