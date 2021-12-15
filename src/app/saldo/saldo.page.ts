@@ -10,10 +10,11 @@ export class SaldoPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    var add_dinheiro = function(valor);
-      'cliente.saldo = cliente.saldo + valor;'
+//    var add_dinheiro = function(valor);
+ //     'cliente.saldo = cliente.saldo + valor;'
 }
 
+/*
 var remover_dinheiro = function(){
     cliente.saldo = cliente.saldo - valor; 
 }
@@ -35,5 +36,5 @@ consultar_saldo();
 
 
 } 
-
+*/
 }
