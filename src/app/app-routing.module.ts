@@ -23,6 +23,18 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
+  {
+    path: 'saque',
+    loadChildren: () => import('./saque/saque.module').then( m => m.SaquePageModule)
+  },
+  {
+    path: 'transferencia',
+    loadChildren: () => import('./transferencia/transferencia.module').then( m => m.TransferenciaPageModule)
+  },
+  {
+    path: 'pagamento',
+    loadChildren: () => import('./pagamento/pagamento.module').then( m => m.PagamentoPageModule)
+  },
 ];
 
 @NgModule({
