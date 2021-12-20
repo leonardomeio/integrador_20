@@ -15,4 +15,7 @@ export class OperacaoService {
   entrar(operacao){
     this.firestore.collection("entrar").add(this.entrar);
   }
+    extrato(){
+    return this.firestore.collection("operacao").snapshotChanges();
+  }
 }
