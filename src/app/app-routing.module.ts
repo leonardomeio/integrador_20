@@ -43,6 +43,19 @@ const routes: Routes = [
     path: 'pagamento',
     loadChildren: () => import('./pagamento/pagamento.module').then( m => m.PagamentoPageModule)
   },
+  {
+    path: 'todosospagamentos',
+    loadChildren: () => import('./todosospagamentos/todosospagamentos.module').then( m => m.TodosospagamentosPageModule)
+  },
+  {
+    path: 'comprovantes',
+    loadChildren: () => import('./comprovantes/comprovantes.module').then( m => m.ComprovantesPageModule)
+  },
+  {
+    path: 'transferencias',
+    loadChildren: () => import('./transferencia/transferencia-routing.module').then( m => m.TransferenciaPageRoutingModule)
+  },
+
 ];
 
 
