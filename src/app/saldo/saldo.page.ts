@@ -6,35 +6,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saldo.page.scss'],
 })
 export class SaldoPage implements OnInit {
+cliente: string;
 
   constructor() { }
 
   ngOnInit() {
-//    var add_dinheiro = function(valor);
- //     'cliente.saldo = cliente.saldo + valor;'
-}
+    
+  }
 
-/*
-var remover_dinheiro = function(){
-    cliente.saldo = cliente.saldo - valor; 
+remover(){
+  var remover_dinheiro = function(){
+    this.cliente.saldo = this.cliente.saldo; 
 }
 
 var consultar_saldo = function(){
-    console.log('SALDO: ' + cliente.saldo);
+    console.log('SALDO: ' + this.cliente.saldo);
 }
 var consultar_cliente = function(){
-    console.log('Nome: ' + cliente.nome);
-    console.log('Login:' + cliente.login);
-    console.log('Senha:' + cliente.senha);
-    console.log('Conta:' + cliente.conta);
-    console.log('Saldo:' + cliente.saldo);
+    console.log('Nome: ' + this.cliente.nome);
+    console.log('Login:' + this.cliente.login);
+    console.log('Senha:' + this.cliente.senha);
+    console.log('Conta:' + this.cliente.conta);
+    console.log('Saldo:' + this.cliente.saldo);
 }
+
 'add_dinheiro();'
 consultar_saldo();
 remover_dinheiro();
 consultar_saldo(); 
+}
 
-
-} 
-*/
 }

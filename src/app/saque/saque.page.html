@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>saque</ion-title>
+    <ion-title>Saque</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-label>Numero do cartão</ion-label>
+  <ion-input type="number" [(ngmodel)]="numerodocartao"></ion-input>
+  <ion-button (click)="entrar()">Entrar</ion-button>
+</ion-content>
+<ion-content>
+ <ion-label>Valor</ion-label> 
+<ion-input type="number" [(ngModel)]="valorSaque"></ion-input>
+<ion-button (click)="sacar()">Sacar</ion-button>
 </ion-content>
